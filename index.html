@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content="HHSW">
+    <link rel="apple-touch-icon" href="/revealweb-144.png" sizes="144x144">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="manifest" type="text/css" href="manifest.json" />
+    <link rel="stylesheet" type="text/css" href="ratchet.min.css" />
+    <title>FAP Passport</title>
+    <script src="./jquery-2.2.4.min.js"></script>
+    <script src="./javaScript/indexedDB.js"></script>
+    <script src="./javaScript/login.js"></script>
+    <script>
+        console.log('loading serviceworker');
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register("./serviceworker.js");
+        }
+    </script>
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <h1 class="title">FAP Passport</h1>
+    </header>
+    <br />
+    <br />
+    <br />
+    <div>ユーザーID
+        <input type="text" id="txtUserID" class="txt">
+    </div>
+    <div>パスワード
+        <input type="password" id="txtPass" class="txt">
+    </div>
+    <button id="signin" class="btn-square-shadow btn_center" onclick="clickLoginButton()">ログイン</button>
+    <button id="signup" class="btn-square-shadow btn_center" onclick="location.href='newlogin.html'">新規登録</button>
+    <div>
+        <p>
+            <textarea rows="5">- 更新履歴  - </textarea>
+        </p>
+        <p>
+            <textarea rows="5">- 更新予定 - </textarea>
+        </p>
+    </div>
+</body>
+
+</html>

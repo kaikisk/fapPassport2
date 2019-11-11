@@ -1,0 +1,28 @@
+﻿table {
+  width: auto;
+  border-collapse: collapse;
+  margin: auto;
+}
+th, td {
+  border: 1px solid #dddddd;
+  padding: 15px;
+}
+
+img {
+    max-width: 95vw;
+    text-align: center;
+
+}
+
+.input-row {
+    height: 41px;
+}
+
+.input-row label {
+    padding: 8px 0px;
+    line-height: 1.6;
+}
+
+select {
+  width: 65%;
+}

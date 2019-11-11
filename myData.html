@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="ratchet.min.css" />
+    <title>FAP Passport</title>
+    <script src="./jquery-2.2.4.min.js"></script>
+    <script src="./javaScript/indexedDB.js"></script>
+    <script src="./javaScript/myData.js"></script>
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <h1 class="title">FAP Passport</h1>
+    </header>
+
+    <br />
+    <br />
+    <br />
+    <button class="btn-square-shadow btn_center" onclick="location.href='menu.html'">戻る</button>
+    <form>
+        <div class="card">
+            <ul class="table-view">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">自分の情報</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">緊急連絡先</td>
+                            <td>家族</td>
+                            <td id="telFam">(未設定)</td>
+                        </tr>
+                        <tr>
+                            <td>主治医</td>
+                            <td id="telAtten">(未設定)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">名前</td>
+                            <td id="txtName">(未設定)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">血液型</td>
+                            <td id="bloodType">(未設定)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">身長</td>
+                            <td id="height">(未設定)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">体重</td>
+                            <td id="weight">(未設定)</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">服用している薬</td>
+                            <td>1</td>
+                            <td id="medi1">(未設定)</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="medi2">(未設定)</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="medi3">(未設定)</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">病歴</td>
+                            <td>1</td>
+                            <td id="anam">(未設定)</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="anam2">(未設定)</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="anam3">(未設定)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--                         
+                    <li class="table-view-cell table-view-divider">緊急連絡先（家族）(EmergencyCall(Family))</li>
+                    <li class="table-view-cell" id="telFam">(未設定)(Notset)</li>
+                    <li class="table-view-cell table-view-divider">緊急連絡先（主治医）(EmergencyCall(Doc))</li>
+                    <li class="table-view-cell" id="telAtten">(未設定)(Notset)</li>
+                    <li class="table-view-cell table-view-divider">血液型(BloodType)</li>
+                    <li class="table-view-cell" id="bloodType">(未設定)(NotSet)</li>
+                    <li class="table-view-cell table-view-divider">身長(Height)</li>
+                    <li class="table-view-cell" id="height">(未設定)(NotSet)</li>
+                    <li class="table-view-cell table-view-divider">体重(Weight)</li>
+                    <li class="table-view-cell" id="weight">(未設定)(NotSet)</li>
+                    <li class="table-view-cell table-view-divider">服用している薬1(Taking medicine 1)</li>
+                    <li class="table-view-cell" id="medi1">(未設定)(NotSet)</li>
+                    <li class="table-view-cell table-view-divider">服用している薬2(Taking medicine 2)</li>
+                    <li class="table-view-cell" id="medi2">(未設定)(NotSet)</li>
+                    <li class="table-view-cell table-view-divider">服用している薬3(Taking medicine 3)</li>
+                    <li class="table-view-cell" id="medi3">(未設定)(NotSet)</li>
+                    <li class="table-view-cell table-view-divider">服用している薬4(Taking medicine 4)</li>
+                    <li class="table-view-cell" id="medi4">(未設定)(NotSet)</li>
+                    <li class="table-view-cell table-view-divider">服用している薬5(Taking medicine 5)</li>
+                    <li class="table-view-cell" id="medi5">(未設定)(NotSet)</li>
+                    <li class="table-view-cell table-view-divider">自分の病名及び治療歴(Your disease name and treatment history)</li>
+                    <li class="table-view-cell" id="anam">(未設定)(NotSet)</li>
+                    <li class="table-view-cell table-view-divider">お名前(Name)</li>
+                    <li class="table-view-cell" id="txtName">(未設定)(NotSet)</li>
+                    <li class="table-view-cell table-view-divider">メールアドレス(Mail Address)</li>
+                    <li class="table-view-cell" id="txtMail">(未設定)(NotSet)</li>
+                    <li class="table-view-cell table-view-divider">パスワード(Password)</li>
+                    <li class="table-view-cell" id="txtPass">(非表示)(NotDisplaying)</li> -->
+            </ul>
+        </div>
+    </form>
+
+    <button class="btn-square-shadow btn_center" onclick="location.href='editMyData.html'">編集</button>
+</body>
+
+</html>
